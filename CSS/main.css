@@ -1,5 +1,1556 @@
-#encabezadoprincipal
-{
-display: grid;
-grid-template-columns: 1fr 3fr 1fr; background-color: blue ;
+/*Cabecera principal*/
+#cabecera-page{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-image: url("../img/header_top_img.png");
+    transition: all 1s ease;
+}
+#cabecera-top {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(0 0 0 / 50%);
+    align-items: center;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+#show-menu-top {
+    position: absolute;
+    top: 34px;
+    right: 1.6%;
+    width: fit-content;
+    padding: 22px !important;
+    display: none !important;
+    visibility: hidden !important;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+#escritorio-log-cabecera img{
+    height: 18px;
+}
+
+#menu-img img {
+    width: 34px;
+}
+
+#menu-img{
+    padding: 2px 15px 2px 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-img:hover{
+    cursor: pointer;
+}
+#menu-img:hover > #disp-men-re-es{
+    display: block !important;
+    visibility: inherit !important;
+}
+#seguir-span{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7E7E7E;
+    transform: rotate(90deg) !important;
+    grid-row: 1/2;
+    margin: 0 0 75px -27px;
+}
+#seguir-linea{
+    width: 60px;
+    height: 0px;
+    border: 1px solid #7E7E7E;
+    transform: rotate(90deg) !important;
+    margin: 0 0 50px -23px;
+}
+
+#redes-sociales{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    left: 4vh;
+    top: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 999999;
+    align-items: center;
+}
+#redes-sociales a:nth-child(5) {
+    margin-left: 4px !important;
+}
+
+#redes-sociales a {
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+#login-seccion {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#login-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    margin: 0 75px;
+}
+#login-contenedor a:nth-child(1){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+#login-contenedor a:nth-child(2){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+#login-contenedor a{
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+#login-contenedor a:hover{
+    cursor: pointer;
+}
+
+#lenguaje-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    margin: 0 75px;
+}
+#lenguaje-contenedor a:nth-child(1){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+#lenguaje-contenedor a:nth-child(2){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+#lenguaje-contenedor a{
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+#lenguaje-contenedor a:hover{
+    cursor: pointer;
+}
+
+#cabecera-bottom{
+    padding: 0 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(0 0 0 / 55%);
+}
+
+#columna-busqueda {
+    grid-template-columns: 1fr auto;
+    padding: 2% 0 1% 0;
+    display: grid;
+}
+#caja-busqueda{
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    background: none;
+    padding: 10px 0 10px 25px;
+    min-width: 20vw;
+    grid-column: 2/3;
+}
+#caja-busqueda::placeholder{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-image: url("/img/cabecera_lupa.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#titulo-bottom {
+    display: grid;
+    margin-bottom: 6%;
+    align-items: flex-end;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+}
+#titulo-luxury-bottom{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+#titulo-real-bottom {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-bottom: 1.5%;
+}
+
+#titulo-view-propiedades {
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    border: 2px solid #ffffff;
+    border-radius: 80px;
+    padding: 12px 45px;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    background-image: url("/img/cabecera_flecha.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.grid-body-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#galeria-para-venta {
+    display: flex;
+    align-items: end;
+    align-content: end;
+    overflow: hidden;
+    direction: rtl;
+}
+
+#descripcion-en-venta-body {
+    margin: 0 10%;
+}
+
+div#details-page {
+    margin: 5% 0;
+}
+
+div#propiedades-en-venta-body {
+    margin-bottom: 5%;
+}
+
+.titulo-worlwide{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #DF991B;
+}
+
+.titulo-propiedades{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 5%;
+}
+
+.titulo-descripcion {
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 330;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 20%;
+    text-align: justify;
+}
+#navegador-para-venta{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.ver-propiedades-boton{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding: 5px 30px;
+}
+a.ver-propiedades-boton{
+    text-decoration: none;
+}
+.ver-propiedades-boton:hover{
+    cursor: pointer;
+    background-color: #26282B;
+    color: #FFFFFF;
+}
+
+.etiqueta-navegador{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 18px;
+    color: #B4B7B7;
+}
+
+#navegador-previo span{
+    margin-left: 1vw;
+}
+#navegador-previo{
+    justify-self: flex-start;
+}
+#navegador-siguiente span {
+    margin-right: 1vw;
+}
+#navegador-previo{
+    display: flex;
+    align-items: center;
+}
+
+#navegador-siguiente{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.navegador-imagen {
+    height: 16px;
+}
+
+#galeria-propiedades, #galeria-propiedades-renta{
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+}
+
+div#galeria-propiedades , div#galeria-propiedades-renta{
+    grid-column: 1/3;
+    /*height: 30vw;*/
+    height: 100%;
+    grid-row: 2/3;
+    margin-right: 0;
+}
+
+#para-venta-inicio {
+    background-image: url("../img/pais_2.png");
+    text-decoration: none;
+    margin: 3px;
+}
+#para-venta-centro {
+    background-image: url("../img/pais_3.png");
+    text-decoration: none;
+    margin: 3px;
+}
+
+#para-venta-fin {
+    background-image: url("../img/pais_3.png");
+    text-decoration: none;
+    margin: 3px;
+}
+
+.foto-content {
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+}
+.foto-content div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: end;
+    background-color: rgba(0, 0, 0, 30%);
+}
+.foto-content div span {
+    display: block;
+    color: white;
+    padding: 0 5% 0 5%;
+}
+
+.foto-content div span:nth-child(1) {
+    padding-top: 3%;
+}
+.foto-content div span:nth-child(2) {
+    padding-bottom: 3%;
+}
+.foto-content:hover > div span {
+    background-color: #FFFFFF !important;
+}
+
+.foto-content:hover > div .local-venta {
+    color: #000000;
+    text-align: center;
+}
+.foto-content:hover > div .pais-venta {
+    color: #464547;
+    background-image: url("../img/logo_pais.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.caja-imagen {
+    margin-right: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.pais-venta, .pais-renta{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease;
+    text-align: left;
+}
+
+.local-venta, .local-renta{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease;
+    text-align: left;
+}
+
+/* Renta*/
+
+#galeria-para-renta {
+    display: flex;
+    align-items: end;
+    align-content: end;
+    overflow: hidden;
+    direction: rtl;
+}
+
+div#propiedades-en-renta-body {
+    margin-bottom: 5%;
+}
+
+#navegador-para-renta, #arte-cultura-navegador{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#para-renta-inicio {
+    background-image: url("../img/pais_3_renta.png");
+    text-decoration: none;
+    margin: 3px;
+}
+#para-renta-centro {
+    background-image: url("../img/pais_2_renta.png");
+    text-decoration: none;
+    margin: 3px;
+}
+
+#para-renta-fin {
+    background-image: url("../img/pais_1_renta.png");
+    text-decoration: none;
+    margin: 3px;
+}
+
+.foto-content:hover > div .local-renta {
+    color: #000000;
+    text-align: center;
+
+}
+.foto-content:hover > div .pais-renta {
+    color: #464547;
+    background-image: url("../img/logo_pais.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#descripcion-en-renta-body {
+    margin: 0 10%;
+}
+
+/* Desarrollo*/
+#desarrollo-body {
+    display: grid;
+}
+.desarrollo-titulo-worlwide{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: #DF991B;
+}
+
+.desarrollo-titulo-propiedades{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#desarrollo-galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 5% 0 5%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.desarrollo-imagen{
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.desarrollo-imagen:hover{
+    border: 1px solid #7E7E7E;
+    transform: translateY(-1vw);
+}
+
+.desarrollo-imagen-contenido {
+    height: 12vw;
+}
+
+.desarrollo-imagen-contenido img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.desarrollo-galeria-etiqueta {
+    display: grid;
+    background: white;
+    padding: 1vw 0 1vw 2vw;
+}
+
+.desarrollo-propiedad-name {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #464547;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.desarrollo-propiedad-city {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 30px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#desarrollo-ver-propiedades{
+    align-self: center;
+    justify-self: center;
+    margin-top: 1.5%;
+}
+/*ARTE Y CULTURA*/
+#arte-cultura-body{
+    height: 40vw;
+    display: grid;
+    margin-top: 5%;
+    grid-template-rows: 10% 10% 60% 10% 10%;
+    grid-template-columns: 5% 5% 35% 5% 5% 35% 5% 5%;
+    margin-bottom: 5%;
+}
+
+#arte-cultura-cuadro-negro{
+    grid-row: 1/6;
+    grid-column: 2/4;
+    background-color: #17181a;
+}
+
+#arte-cultura-fotos{
+    grid-column: 3/6;
+    grid-row: 2/5;
+    overflow: hidden;
+}
+
+#arte-cultura-galeria{
+    display: flex;
+    overflow: hidden;
+}
+
+#arte-cultura-galeria a {
+    width: 100%;
+}
+
+#arte-cultura-galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#arte-cultura-galeria a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#arte-cultura-logo-linea{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 6/9;
+    grid-row: 1/3;
+    display: grid;
+    margin-left: 7%;
+}
+
+#arte-cultura-linea{
+    border-bottom: 1.3px solid #DF991B;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#arte-cultura-logo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border-right: 1.5px solid #DF991B;
+    align-self: center;
+}
+#arte-cultura-logo img {
+    width: 72px;
+    height: 72px;
+}
+
+#arte-cultura-servicios{
+    grid-column: 6/8;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+div#arte-cultura-descripcion-servicios {
+    display: grid;
+    align-content: baseline;
+    margin-left: 10%;
+}
+
+/* PIE*/
+#pie-pagina{
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    display: grid;
+}
+#pie-lista-registro{
+    background: #26282B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+    padding: 2% 5%;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    z-index: 999;
+    grid-template-rows: auto 1fr;
+}
+
+#pie-etiqueta-unirse{
+    grid-column: 1/2;
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #DF991B;
+    padding-top: 15px;
+}
+#pie-etiqueta-desbloqueo{
+    grid-column: 1/2;
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 45px;
+
+    color: #FFFFFF;
+    align-self: start;
+}
+
+#pie-formulario {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.primerLineaNombre{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+.nombreUsuario{
+    font-size: 14px;
+    /*font-weight: 400;*/
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: brandon-grotesque, sans-serif;
+}
+
+#pie-summit{
+    background-color: unset;
+    color: #DF991B;
+    padding: 5px 30px;
+    border-radius: 100px !important;
+    letter-spacing: 3px;
+    border: 1px solid #DF991B;
+    font-size: 17px;
+    font-family: brandon-grotesque;
+    font-weight: 390;
+    margin-top: 0.6vw;
+}
+
+.pie-linea-summit{
+    display: flex;
+    justify-content: end;
+    margin-top: 0.6vw;
+}
+
+#nombreUsuarioInput{
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    background: none;
+    padding: 10px 0 10px 25px;
+    min-width: 40vw;
+    grid-column: 3/3;
+}
+#nombreUsuarioInput::placeholder{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.fondo-pie{
+    background: #000000;
+}
+
+#pie-fondo{
+    padding: 12% 0 0 0;
+    grid-column: 1/3;
+    grid-row: 2/5;
+}
+
+#pie-contenido-columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1% 5%;
+}
+
+.pie-estilo-letras{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 330;
+    font-size: 35 px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+#pie-contenido-columnas div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#pie-contenido-columnas div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+#pie-contenido-columnas div span a{
+    text-decoration: none;
+    color: #B4B7B7;
+}
+
+#pie-contenido-columnas div:nth-child(1){
+    align-items:flex-start;
+}
+
+#pie-contenido-columnas div:nth-child(4){
+    align-items: end;
+}
+
+#pie-numero{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+
+    color: #FFFFFF !important;
+}
+
+#pie-call-center{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+
+    color: #B4B7B7;
+}
+
+#pie-copyright {
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFF;
+    margin: 1% 5%;
+    border-top: 1px solid white;
+    padding-top: 1%;
+}
+/* FONTS */
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url("../fonts/Brandon_reg.otf");
+
+}
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url("../fonts/PFRegalDisplayPro-Regular.ttf");
+}
+
+/* MEDIA QUERIES */
+
+/*Header*/
+@media(max-width: 1515px){
+    #redes-sociales {
+        left: 3vh;
+    }
+
+    #arte-cultura-body {
+        height: 46vw;
+    }
+}
+
+@media(max-width: 1150px){
+    #redes-sociales {
+        left: 2vh;
+    }
+
+    #arte-cultura-body {
+        height: 55vw;
+    }
+
+    span#arte-cultura-descripcion-etiqueta {
+        margin-bottom: 10%;
+    }
+}
+
+@media(max-width: 750px){
+    #redes-sociales {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    #arte-cultura-navegador{
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 2500px) {
+    #redes-sociales a {
+        margin-bottom: 0.6vw;
+    }
+    #redes-sociales a img {
+        height: 1vw;
+    }
+    #redes-sociales a {
+        margin-bottom: 0.7vw;
+    }
+
+    #seguir-span {
+        margin: 0 0 3.5vw -1.2vw;
+        font-size: 0.9vw;
+    }
+    #seguir-linea{
+        height: 0;
+        width: 3vw;
+        border: 0.1vw solid #7E7E7E;
+        margin: 0 0 2.4vw -1vw;
+        transform: rotate(90deg) !important;
+    }
+
+    #arte-cultura-logo {
+        height: 3.5vw;
+        width: 3.5vw;
+        border-right: 0.1vw solid #DF991B;
+    }
+
+    #arte-cultura-logo img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #arte-cultura-linea {
+        border-bottom: 0.07vw solid #DF991B;
+    }
+
+}
+
+
+/* MEDIA QUERY*/
+@media (min-width: 2500px) {
+    #escritorio-log-cabecera img {
+        height: 1.3vw;
+    }
+    #menu-img img {
+        width: 1.7vw;
+    }
+    #login-contenedor a:nth-child(1) {
+        font-size: 1vw;
+    }
+    #login-contenedor a:nth-child(2) {
+        font-size: 1vw;
+        border-left: 0.1vw solid rgba(255, 255, 255, 0.5);
+    }
+
+    #lenguaje-contenedor a:nth-child(1) {
+        font-size: 1vw;
+    }
+    #lenguaje-contenedor a:nth-child(2) {
+        font-size: 1vw;
+        border-left: 0.1vw solid rgba(255, 255, 255, 0.5);
+    }
+
+    #caja-busqueda {
+        font-size: 0.9vw;
+        padding: 0.6vw 0 0.6vw 1vw;
+        min-width: 25vw;
+        border: 0.06vw solid #FFFFFF;
+    }
+    #caja-busqueda:placeholder {
+        font-size: 0.9vw;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    #caja-busqueda{
+        font-size: 18px;
+        padding: 7px 0 7px 20px;
+    }
+    
+    #caja-busqueda::placeholder{
+        font-size: 18px;
+    }
+
+    #titulo-bottom {
+        margin-bottom: 4%;
+    }
+    
+    #titulo-luxury-bottom {
+        font-size: 30px;
+    }
+    #titulo-real-bottom {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #titulo-view-propiedades {
+        font-size: 22px;
+        padding: 8px 45px;
+    }
+    
+    .titulo-worlwide {
+        font-size: 26px;
+    }
+    .titulo-propiedades {
+        font-size: 42px;
+    }
+
+    .titulo-descripcion {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .pais-venta {
+        font-size: 18px;
+    }
+    .local-venta {
+        font-size: 22px;
+    }
+    .foto-content {
+        width: 300px;
+    }
+
+    #arte-cultura-body {
+        height: 45vw;
+    }
+
+}
+
+
+@media (max-width: 1300px){
+    #pie-fondo {
+        padding: 15% 0 0 0;
+    }
+
+    #caja-busqueda {
+        min-width: 30vw;
+    }
+    
+    #columna-busqueda {
+        padding: 3% 0 1% 0;
+    }
+
+    #arte-cultura-logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    #arte-cultura-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .titulo-worlwide {
+        font-size: 24px;
+    }
+
+    .titulo-propiedades {
+        font-size: 35px;
+    }
+
+}
+@media (max-width: 1200px){
+    #pie-fondo {
+        padding: 16% 0 0 0;
+    }
+}
+
+@media (max-width: 1000px){
+    #caja-busqueda {
+        min-width: 35vw;
+    }
+
+    #arte-cultura-logo img {
+        width: 45px;
+        height: 45px;
+    }
+    #arte-cultura-logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .titulo-propiedades {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .titulo-worlwide {
+        font-size: 22px;
+        line-height: 23px;
+    }
+    .titulo-descripcion {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 980px) {
+    div#details-page {
+        margin: 7% 0;
+    }
+    div#propiedades-en-venta-body {
+        margin-bottom: 7%;
+    }
+    div#propiedades-en-renta-body {
+        margin-bottom: 7%;
+    }
+    #arte-cultura-body {
+        margin-top: 7%;
+    }
+    .titulo-propiedades {
+        margin-bottom: 7%;
+    }
+    div#desarrollo-body {
+        margin-bottom: 6%;
+    }
+}
+
+@media(max-width: 980px){
+    #redes-sociales{
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    #login-contenedor{
+        display: none !important;
+        visibility: hidden !important;
+    }
+    #lenguaje-contenedor{
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    div#details-page {
+        margin: 7% 0;
+    }
+}
+
+@media (max-width: 915px) {
+    span#pie-etiqueta-unirse {
+        line-height: 32px;
+        font-size: 30px;
+    }
+
+    #pie-etiqueta-desbloqueo {
+        line-height: 40px;
+        font-size: 40px;
+    }
+    
+}
+
+@media (max-width:900) {
+    #arte-cultura-body {
+        height: 57vw;
+    }
+}
+
+
+
+@media(max-width: 850px){
+    #caja-busqueda {
+        min-width: 40vw;
+    }
+
+    #arte-cultura-body {
+        height: 70vw;
+    }
+
+    #desarrollo-body {
+        grid-template-columns: 1fr;
+    }
+
+    #desarrollo-ver-propiedades {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin-top: 2.5%;
+    }
+
+    #navegador-para-venta, #navegador-para-renta, #arte-cultura-navegador {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+
+@media(max-width: 835px){
+    #pie-etiqueta-desbloqueo {
+        margin-bottom: 20px;
+    }
+    #pie-lista-registro {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+    #pie-formulario {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        margin-top: 5%;
+    }
+    #pie-fondo {
+        padding: 30% 0 0 0;
+    }
+    #pie-contenido-columnas {
+        row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #pie-contenido-col1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #pie-contenido-col4 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    div#pie-contenido-columnas {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div#pie-contenido-col1 {
+        justify-self: flex-start;
+    }
+    div#pie-contenido-col2 {
+        justify-self: flex-end;
+    }
+    div#pie-contenido-col3 {
+        justify-self: flex-start;
+    }
+    div#pie-contenido-col4 {
+        justify-self: flex-start;
+    }
+    .pie-estilo-letras {
+        font-size: 18px;
+    }
+    #pie-call-center {
+        font-size: 23px;
+    }
+    #pie-numero {
+        font-size: 24px;
+    }
+    #pie-fondo #pie-contenido-columnas div:nth-child(4) {
+        margin-bottom: 3%;
+    }
+
+    .pie-linea-summit{
+        justify-content: start;
+    }
+
+    #pie-summit{
+        background-image: url("/img/footer_flecha_derecha.png");
+        background-repeat: no-repeat;
+        align-content: center;
+        background-position: 65px;  
+        width: 100%;
+        border: none;
+    }
+
+    #arte-cultura-navegador-contacto, #int-navegador-renta, #int-navegador-venta{
+        background-image: url("/img/footer_flecha_derecha.png");
+        background-repeat: no-repeat;
+        align-content: space-between;
+        background-position: 10px;  
+        border: none;
+        color: #DF991B;
+        margin-left: 60px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 800px) {
+    #arte-cultura-body {
+        height: 81vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #arte-cultura-body {
+        height: 82vw;
+    }
+
+    #desarrollo-galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    div#details-page {
+        margin: 10% 0 7% 0;
+    }
+
+    #arte-cultura-body {
+        grid-template-columns: 5% 75% 10% 5% 5%;
+        grid-template-rows: 10% 30% 5% 5% 40% 5% 5%;
+        margin-bottom: 10%;
+    }
+
+    #arte-cultura-body {
+        height: 140vw;
+    }
+
+    #arte-cultura-cuadro-negro {
+        grid-column: 1/3;
+        grid-row: 4/7;
+        margin-top: 5%;
+    }
+
+    #arte-cultura-fotos {
+        grid-column: 2/6;
+        grid-row: 5/6;
+    }
+
+    #arte-cultura-logo-linea {
+        grid-column: 2/6;
+        grid-row: 1/2;
+        margin-left: 0;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #arte-cultura-linea {
+        height: 100%;
+    }
+
+    #arte-cultura-servicios {
+        grid-column: 2/5;
+        grid-row: 2/3;
+    }
+
+    div#arte-cultura-descripcion-servicios {
+        margin-left: 0;
+    }
+
+    #arte-cultura-servicios-etiqueta {
+        margin-top: 2%;
+    }
+
+    span#arte-cultura-descripcion-etiqueta {
+        margin-bottom: 7%;
+    }
+
+    #arte-cultura-navegador {
+        margin-left: 0;
+    }
+
+    #arte-cultura-navegador {
+        margin-bottom: 3%;
+    }
+
+    #perv-nav-pag, #next-nav-pag, #navegador-siguientet,
+    #navegador-previo, #arte-cultura-navegador-previo,
+    #arte-cultura-navegador-siguiente{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #arte-cultura-navegador-contacto, #int-navegador-venta, #int-navegador-renta{
+        width: 100%;
+    }
+
+    #descripcion-en-venta-body, #descripcion-en-renta-body {
+        margin: 0 5%;
+        grid-column: 1/3;
+    }
+    div#galeria-para-venta {
+        grid-column: 1/3;
+        height: 50vw;
+        grid-row: 2/3;
+        margin-top: 7%;
+        margin-right: 0;
+    }
+    div#galeria-para-renta {
+        grid-column: 1/3;
+        height: 50vw;
+        grid-row: 2/3;
+        margin-top: 7%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 550px){
+    #escritorio-log-cabecera{
+        display: block !important;
+        visibility: inherit !important;    
+    }
+    #escritorio-log-cabecera img{
+        margin: 5px 0;
+        height: 50px;
+        content:url("../img/cabecera_logo_movil.svg");
+        background-position: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    #caja-busqueda {
+        grid-column: 1/3;
+        margin-top: 20px;
+    }
+
+    div#pie-contenido-col2 {
+        justify-self: start;
+        align-items: flex-start;
+    }
+    
+    div#pie-contenido-col3 {
+        justify-self: start;
+        align-items: flex-start;
+    }
+    #pie-contenido-columnas div:nth-child(4){
+        align-items: flex-start;
+    }
+
+    #pie-fondo {
+        margin-top: 5%;
+    }
+
+    #arte-cultura-body {
+        margin-bottom: 15%;
+    }
+
+    #desarrollo-galeria {
+        grid-template-columns: 1fr;
+    }
+    #desarrollo-galeria a:nth-child(6),
+    #desarrollo-galeria a:nth-child(5),
+    #desarrollo-galeria a:nth-child(4),
+    #desarrollo-galeria a:nth-child(3),
+    #desarrollo-galeria a:nth-child(2)
+    {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #desarrollo-galeria {
+        margin: 3% 0 0 0;
+    }
+
+    .desarrollo-imagen-contenido {
+        height: 60vw;
+    }
+    .desarrollo-galeria-etiqueta {
+        padding: 4vw 0 4vw 6vw;
+    }
+
+    #arte-cultura-body {
+        height: 185vw;
+    }
+
+    span#arte-cultura-descripcion-etiqueta {
+        margin-bottom: 30px;
+    }
+
+    #navegador-para-venta, #navegador-para-renta, #arte-cultura-navegador {
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    #arte-cultura-body {
+        grid-template-rows: 10% 41% 3% 3% 39% 3% 1%;
+        margin-bottom: 20%;
+    }
+    
+    #arte-cultura-servicios {
+        grid-template-rows: auto 1fr;
+    }
+
+    #arte-cultura-servicios-etiqueta {
+        margin-top: 7%;
+    }
+
+    span#arte-cultura-descripcion-etiqueta {
+        margin-bottom: 7%;
+    }
+
+    #arte-cultura-navegador {
+        margin-bottom: 0;
+    }
+    
+    #navegador-para-venta, #navegador-para-renta, #arte-cultura-navegador {
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #arte-cultura-body {
+        height: 195vw;
+    }
+}
+
+@media (max-width: 350px) {
+    #arte-cultura-body {
+        height: 210vw;
+    }
+}
+
+@media (max-width: 330px) {
+    #navegador-para-venta, #navegador-para-renta, #arte-cultura-navegador {
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 325px) {
+    #arte-cultura-body {
+        height: 235vw;
+    }
+}
+
+@media (max-width: 310px) {
+    #arte-cultura-body {
+        height: 270vw;
+    }
 }
